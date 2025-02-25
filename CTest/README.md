@@ -3,11 +3,11 @@
 Merge and Sort algorithm implemented in C language
 
 ## Tools 
-**Compiler(s)**:
+- **Compiler(s)**:
     - GCC (Apple Clang 15.0.0)
-**IDE(S)**:
+- **IDE(S)**:
     - Visual Studio Code
-**Other**:
+- **Other**:
     - Makefile for compilation
 ##SERVICES
     **Merge Sort algorithm reference** - https://en.wikipedia.org/wiki/Merge_sort
