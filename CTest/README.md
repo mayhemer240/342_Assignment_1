@@ -9,11 +9,11 @@ Merge and Sort algorithm implemented in C language
     - Visual Studio Code
 - **Other**:
     - Makefile for compilation
-##SERVICES
-    - **Merge Sort algorithm reference** - https://en.wikipedia.org/wiki/Merge_sort
-    - **Quick Sort algorithm reference** -  https://en.wikipedia.org/wiki/Quick_sort
-    - **Communication** - discord.com
-    - **Source control** - Github.com
+## SERVICES
+- **Merge Sort algorithm reference** - https://en.wikipedia.org/wiki/Merge_sort
+- **Quick Sort algorithm reference** -  https://en.wikipedia.org/wiki/Quick_sort
+- **Communication** - discord.com
+- **Source control** - Github.com
 
 ### Project Structure
 
