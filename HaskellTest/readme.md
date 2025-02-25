@@ -1,10 +1,15 @@
 # Haskell Test Program
 Merge and quicksort implementation in Haskell
 
-## **Build and Execution Guide**
-This project uses a `Makefile` to automate compilation, execution, and output management.
+## **Requirements*
+Makefile
+GHC: the Glasgow Haskell Compiler
+cabal-install: the Cabal installation tool for managing Haskell software
+
+
 
 ## Using the Makefile
+This project uses a `Makefile` to automate compilation, execution, and output management.
 1. **Build the Program**
    Command: `make`  
    - Default command – compiles the source code.  
