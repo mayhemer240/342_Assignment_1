@@ -2,18 +2,18 @@
 
 Merge and Sort algorithm implemented in C language
 
-## Build Requirements
-
-- GCC Compiler
-- Make
-
-### Project Structure
+## Project Structure
 
 📂 CTest/ (Main directory for the C project)  
 ├── 📂 src/ (Contains all C source files)  
 ├── 📂 build/ (Created after `make` is run, stores compiled files)  
 │   ├── 📂 output/ (Created after `make release`, stores output files)  
 │   └── program (Compiled executable)
+
+### Build Requirements
+
+- GCC Compiler
+- Make
 
 #### Build Instructions
 
