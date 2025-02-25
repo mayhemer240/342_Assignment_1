@@ -8,6 +8,17 @@ Merge and quicksort implementation in Haskell
 - GHC: the Glasgow Haskell Compiler
 - cabal-install: the Cabal installation tool for managing Haskell software
 
+## Project navigation
+📂 HaskellTest/ (Main directory for the Haskell project)  
+├── 📂 app/ (Contains all source files)  
+├── 📂 output/ (Created after `make` is run, stores output txt files)  
+├── 📂 dist-newstyle/ (Automatically generated from cabal, stores build artifacts)  
+├── 📄 CHANGELOG.md (Keeps track of the project’s history with version updates, bug fixes, and new features)  
+├── 📄 haskelltest.cabal (Cabal project file that defines project settings, dependencies, and build instructions)  
+└── 📄 Makefile (Defines build automation commands, such as `make release` or `make clean`)
+
+
+
 ## Using the Makefile
 
 This project uses a `Makefile` to automate compilation, execution, and output management.
