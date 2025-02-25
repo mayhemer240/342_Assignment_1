@@ -1,42 +1,58 @@
 # Compiler
 CC = gcc
 
-#  -g    adds debugging information to the executable file
-#  -Wall turns on most, but not all, compiler warnings
+# COmpiler flags
 CFLAGS = -Wall 
+
+#directories
+BUILD_DIR = build
+OUTPUT_DIR = results
 
 # Source files
 SRCS = src/main.c src/merge_sort.c src/quick_sort.c
 
-# Output files directory
-OUTPUT_DIR = build/output
-# Output executable name
-TARGET = build/program
-
+# Output executable name (stored in build/)
+TARGET = program
 
 # Rule to compile the program
-$(TARGET): $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+$(BUILD_DIR)/$(TARGET): $(SRCS)
+	@mkdir -p $(BUILD_DIR)  # Ensure build directory exists
+	$(CC) $(CFLAGS) -o $(BUILD_DIR)/$(TARGET) $(SRCS) 
 
-# Run without redirecting output
-debug: $(TARGET)
-	@echo "\nC Test Program Output (Last 10 lines): \n"
-	@./$(TARGET) | tail -n 10
+# Run without redirecting output (last 10 lines)
+# Run without redirecting output (last 10 lines)
+debug: $(BUILD_DIR)/$(TARGET)
+	@echo ""
+	@echo "============================="
+	@echo " OUTPUT FROM PROGRAM: "
+	@echo "============================="
+	@echo ""
+	@$(BUILD_DIR)/$(TARGET) | tail -n 10
+	@echo ""
+	@echo "=============================\n\n\n\n"
+	@echo ""
 
-# Release build
-release: $(TARGET)
-	@./$(TARGET) > build/output/output_c_1.txt
-	@cat build/output/output_c_1.txt
+
+# Release build with user input (only program output is written to the file)
+release: $(BUILD_DIR)/$(TARGET)
+	@mkdir -p $(BUILD_DIR)/$(OUTPUT_DIR)
+	@read -p "Enter output file number: " FILE_NUM; \
+	FILE_NAME="output_c_$$FILE_NUM.txt"; \
+	OUTPUT_FILE="$(BUILD_DIR)/$(OUTPUT_DIR)/$$FILE_NAME"; \
+	echo ""; \
+	echo "============================="; \
+	echo " SHOWING RESULTS FROM FILE: $$FILE_NAME "; \
+	echo "============================="; \
+	./$(BUILD_DIR)/$(TARGET) > $$OUTPUT_FILE; \
+	cat $$OUTPUT_FILE; \
+	echo ""; \
+	echo "=============================\n\n\n\n"; \
+	echo ""
+
+
 	
-# Run and redirect output to a file (timestamped)
-update_instructions: $(TARGET)
-	@./$(TARGET) > build/output/output_c_2.txt
-	@cat build/output/output_c_2.txt
 
-update_requirements: $(TARGET)
-	@./$(TARGET) > build/output/output_c_3.txt
-	@cat build/output/output_c_3.txt
 
 # Clean rule to remove compiled files
 clean:
-	@rm -f $(TARGET) $(OUTPUT_DIR)*.txt
+	rm -rf $(BUILD_DIR)
