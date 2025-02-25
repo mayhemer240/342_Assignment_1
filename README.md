@@ -1,4 +1,4 @@
-# 342_Assignment_1
+# 342 Assignment 1
 Sorting algorithms in C and Haskell
 
 
