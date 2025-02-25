@@ -31,7 +31,7 @@
 ### Additional Notes
 - The `make release` command will store output in the `build/output/` directory.
 - The executable file is stored in `build/`.
-- Ensure you have `make` installed to use these co
+- Ensure you have `make` installed to use these commands
 
 
 
