@@ -19,7 +19,7 @@ Merge and quicksort implementation in Haskell
 
 
 
-## Using the Makefile
+### Using the Makefile
 
 This project uses a `Makefile` to automate compilation, execution, and output management.
 
