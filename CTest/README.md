@@ -10,13 +10,15 @@ Merge and Sort algorithm implemented in C language
 │   ├── 📂 output/ (Created after `make release`, stores output files)  
 │   └── program (Compiled executable)
 
-## Build Instructions
 ### Requirements
 
 - GCC Compiler
 - Make
 
-### Build Instructions
+## Build Instructions
+
+
+## Build Instructions
 1. Navigate to the project directory
    `cd CTest`
 
