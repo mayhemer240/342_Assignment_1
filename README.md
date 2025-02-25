@@ -1,20 +1,22 @@
-# 342 Assignment 1
-Sorting algorithms in C and Haskell
+# 342 Assignment 1  
+Sorting Algorithms in C and Haskell  
 
+## Tools Used  
+- **IDE:** Visual Studio Code  
+- **Compilers:**  
+  - GCC (Apple Clang 15.0.0)  
+  - Haskell Compiler (Specify version)  
+- **Communication:** [Discord](https://discord.com)  
+- **Algorithm References:**  
+  - [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)  
+  - [Quicksort](https://en.wikipedia.org/wiki/Quicksort)  
+- **Other:**  
+  - Makefile for compilation  
 
-###  TOOLS USED
-IDE: Visual Studio Code \
-COMPILERS: \
-  gcc -> Apple clang version 15.0.0 \
-  hk -> \
-COMMUNICATION METHOD: discord.com \
-ALGORITHM REFERENCES
-  https://en.wikipedia.org/wiki/Merge_sort \
-  https://en.wikipedia.org/wiki/Quicksort \
-OTHER
-  Makefile
+## Notes  
+To compile all C source files, use the provided Makefile:  
+1. Open a terminal and navigate to the directory containing the source files.  
+2. Run the command:  
+   ```sh
+   make
 
-
-## NOTES
-  Use makefile to compile all C source files. 
-  In terminal, make sure you are in directory containing source files, then type 'make'
