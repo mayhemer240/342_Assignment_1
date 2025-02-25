@@ -1,9 +1,7 @@
 # Haskell Test Program
 Merge and quicksort implementation in Haskell
 Collaborators: 
-  Malcolm Roddy
-
----
+  --Malcolm Roddy
 
 ## **Build Documentation**
 Use of makefile 
