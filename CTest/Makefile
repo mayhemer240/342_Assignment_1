@@ -19,8 +19,7 @@ $(BUILD_DIR)/$(TARGET): $(SRCS)
 	@mkdir -p $(BUILD_DIR)  # Ensure build directory exists
 	$(CC) $(CFLAGS) -o $(BUILD_DIR)/$(TARGET) $(SRCS) 
 
-# Run without redirecting output (last 10 lines)
-# Run without redirecting output (last 10 lines)
+# Output to terminal last ten lines from program output
 debug: $(BUILD_DIR)/$(TARGET)
 	@echo ""
 	@echo "============================="
@@ -33,7 +32,10 @@ debug: $(BUILD_DIR)/$(TARGET)
 	@echo ""
 
 
-# Release build with user input (only program output is written to the file)
+# Release build, user inputs file number to append
+# usage: make release 
+# input: 1
+# output: output_c_1.txt
 release: $(BUILD_DIR)/$(TARGET)
 	@mkdir -p $(BUILD_DIR)/$(OUTPUT_DIR)
 	@read -p "Enter output file number: " FILE_NUM; \
@@ -50,9 +52,6 @@ release: $(BUILD_DIR)/$(TARGET)
 	echo ""
 
 
-	
-
-
-# Clean rule to remove compiled files
+# Clean rule to remove everything in build directory
 clean:
 	rm -rf $(BUILD_DIR)
