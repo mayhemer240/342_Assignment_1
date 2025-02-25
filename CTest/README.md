@@ -17,8 +17,6 @@ Merge and Sort algorithm implemented in C language
 
 ## Build Instructions
 
-
-## Build Instructions
 1. Navigate to the project directory
    `cd CTest`
 
