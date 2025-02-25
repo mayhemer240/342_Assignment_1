@@ -1,21 +1,12 @@
-
-// merge_sort.h
-//
-// CECS 342 Assignment 1
-// Sorting Algorithms in C & Haskell
-//
-// merge sort program 
-// Malcolm Roddy
-// DUE DATE: 03/04/2025
-
-
 #pragma once
 
+
+
 /**
- * @brief Sorts an array using the merge sort algorithm.
+ * @brief Wrapper for merge sort
  *
  * This function allocates a temporary array, copies the input array into it, 
- * and then sorts the array using a recursive divide-and-conquer approach.
+ * and then calls divide function with initial arguments for recursive calls
  *
  * @input - array[]: The array to be sorted - size: The number of elements in the array.
  * @output- array[]: The sorted array, modified in place.
@@ -37,7 +28,8 @@ void merge_sort(int*, int);
  * @output
  * - B[]: The temporary array used to store merged sorted elements.
  */
-void split(int B[], int iBegin, int iEnd, int A[]);
+static inline
+void divide(int*, int, int, int*);
 
 
 /**
@@ -56,5 +48,6 @@ void split(int B[], int iBegin, int iEnd, int A[]);
  * @output
  * - None
  */
-void merge(int B[], int iBegin, int iMiddle, int iEnd, int A[]);
+static inline
+void conquer(int*, int, int, int, int*);
 

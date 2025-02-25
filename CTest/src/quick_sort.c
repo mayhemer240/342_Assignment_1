@@ -1,3 +1,30 @@
+
+/* 
+    Quick Sort implementation
+    hoages algorithm
+
+    Traverses from left to right, finding index with element greater
+    than pivot, then traverse right to left, finding index with smaller element
+    if indices overlap, return right index as new partition index
+    otherwise, swap elements at i and j, and continue
+
+
+    COLLABORATORS:
+        Malcolm Roddy
+    TOOLS
+        Compiler(s):
+            - GCC (Apple Clang 15.0.0)
+        IDE(S):
+            - Visual Studio Code
+        Other:
+            - Makefile
+    SERVICES
+        Quicksort algorithm reference - (https://en.wikipedia.org/wiki/Quicksort) 
+        Communication - discord.com
+        Source control - Github.com  
+*/
+
+
 #include "quick_sort.h"
 
 
@@ -34,3 +61,9 @@ int partition(int* array, int lo, int hi){
     } 
 }
 
+static inline
+void swap(int* array, int i, int j){
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}

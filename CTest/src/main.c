@@ -5,6 +5,21 @@
 //
 // C Test Program
 
+/* 
+    COLLABORATORS:
+        Malcolm Roddy
+    TOOLS
+        Compiler(s):
+            - GCC (Apple Clang 15.0.0)
+        IDE(S):
+            - Visual Studio Code
+        Other:
+            - Makefile for compilation
+    SERVICES
+        Merge Sort algorithm reference - https://en.wikipedia.org/wiki/Merge_sort
+        Communication - discord.com
+        Source control - Github.com
+*/
 
 #include "quick_sort.h" 
 #include "merge_sort.h" 
@@ -13,8 +28,8 @@
 #include <stdio.h>
 
 
-char *name = "Malcolm Roddy"; // TODO: Update your full name.
-int studentID = 12345678;  // TODO: Update your student ID.
+char *name = "Professor correction"; // TODO: Update your full name.
+int studentID = 30573684;  // TODO: Update your student ID.
 
 
 static

@@ -1,12 +1,4 @@
 #pragma once
-// hoages algorithm
-/*
-    Traverses from left to right, finding index with element greater
-    than pivot, then traverse right to left, finding index with           smaller element
-    if indices overlap, return right index as new partition index
-    otherwise, swap elements at i and j, and continue
-*/
-
 
 /*  Wrapper function that calls quick sort 
     alogrithm with default values.  
@@ -17,7 +9,6 @@ void quick_sort(int*, int);
 
 
 /*  Sorts (a portion of) an array, divides it into partitions, then sorts those
-    algorithm quicksort(A, lo, hi) is 
 
     input: unsorted array, low index, high index
     output: none    */
@@ -33,9 +24,5 @@ int partition(int*, int, int);
 
 // Swap the elements at the left and right indices
 static inline
-void swap(int* array, int i, int j){
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-}
+void swap(int*, int, int);
 
