@@ -12,7 +12,7 @@ debug: init
 	echo "====================================="; \
 	echo " Running $(TARGET)..."; \
 	echo "====================================="; \
-	cabal run $(TARGET); \
+	cabal run $(TARGET) | tail -n 10; \
 	echo "====================================="; \
 
 

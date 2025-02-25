@@ -1,3 +1,4 @@
+# Makefile for C program
 
 # COmpiler flags
 CFLAGS = -Wall 
@@ -17,21 +18,18 @@ $(BUILD_DIR)/$(TARGET): $(SRCS)
 	@mkdir -p $(BUILD_DIR)  # Ensure build directory exists
 	$(CC) $(CFLAGS) -o $(BUILD_DIR)/$(TARGET) $(SRCS) 
 
-# Run without redirecting output (last 10 lines)
-# Run without redirecting output (last 10 lines)
+
 debug: $(BUILD_DIR)/$(TARGET)
 	@echo ""
 	@echo "============================="
-	@echo " OUTPUT FROM PROGRAM: "
+	@echo " Running C program...: "
 	@echo "============================="
-	@echo ""
 	@$(BUILD_DIR)/$(TARGET) | tail -n 10
-	@echo ""
-	@echo "\n\n\n\n"
+	@echo "=============================\n"
 
 
 # Release build with automatic numbering
-test: $(BUILD_DIR)/$(TARGET)
+release: $(BUILD_DIR)/$(TARGET)
 	@mkdir -p $(BUILD_DIR)/$(OUTPUT_DIR)
 	@i=1; \
 	while [ -f "$(BUILD_DIR)/$(OUTPUT_DIR)/output_c_$$i.txt" ]; do \
@@ -39,17 +37,12 @@ test: $(BUILD_DIR)/$(TARGET)
 	done; \
 	FILE_NAME="output_c_$$i.txt"; \
 	OUTPUT_FILE="$(BUILD_DIR)/$(OUTPUT_DIR)/$$FILE_NAME"; \
-	echo ""; \
-	echo "====================================="; \
-	echo " Running $(BUILD_DIR)/$(TARGET)..."; \
 	./$(BUILD_DIR)/$(TARGET) > $$OUTPUT_FILE; \
-	echo " Output saved to $$OUTPUT_FILE"; \
-	echo "====================================="; \
-	echo ""; \
-	cat $$OUTPUT_FILE; \
-	echo "\n\n"
+	echo " Output saved to file."; \
+	echo " File: $$OUTPUT_FILE"; \
+	echo "\n"
 
-
+all: debug release
 # Clean rule to remove compiled files
 clean:
 	rm -rf $(BUILD_DIR)
