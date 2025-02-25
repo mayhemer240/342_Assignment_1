@@ -3,7 +3,11 @@
 - GCC Compiler
 
 ### Project Structure
-📂 CTest/ (Main directory for the C project)
+📂 CTest/ (Main directory for the C project)  
+├── 📂 src/ (Contains all C source files)  
+├── 📂 build/ (Created after `make` is run, stores compiled files)  
+│   ├── 📂 output/ (Created after `make release`, stores output files)  
+│   └── program (Compiled executable)
 
 ### Build Instructions
 1. Navigate to the project directory
