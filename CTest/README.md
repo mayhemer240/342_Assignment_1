@@ -23,10 +23,10 @@ Merge and Sort algorithm implemented in C language
 2. Compile the program
    `make`
 
-3. Run the program in debug mode (outputs the last 10 lines):
+3. Compile and view last 10 lines of program output:
    `make debug`
 
-4. Run the program and save output to a file
+4. Compile and store program output in a textfile
    `make release`
    - This will prompt you to enter a file number, creating an output file:
      output_c_x.txt  (where x is your input)
