@@ -12,5 +12,4 @@
 ## Notes  
 To compile all C source files, use the provided Makefile:  
 1. Open a terminal and navigate to the directory containing the source files.  
-2. Run the command:  
-   make
+2. Run the command:  Make
