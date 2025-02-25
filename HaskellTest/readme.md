@@ -12,17 +12,17 @@ Merge and quicksort implementation in Haskell
 
 This project uses a `Makefile` to automate compilation, execution, and output management.
 
-1. **Build the Program**
+1. **Default**
    Command: `make`  
    - Default command – compiles the source code.  
    - Creates an `output/` subdirectory inside the project directory (if it doesn’t exist).  
 
-2. **Debug Mode (Console Output)**
+2. **Build Debug (Console Output)**
    Command: `make debug`  
    - Runs the program.  
    - Displays output directly in the console (does not save to a file).  
 
-3. **Release Mode (Save Output to File)**
+3. **Build Release (Save Output to File)**
    Command: `make release`  
    - Runs the program and saves output to a text file.  
    - Files are automatically numbered:  
@@ -30,6 +30,9 @@ This project uses a `Makefile` to automate compilation, execution, and output ma
      - Second run → `output_hs_2.txt`  
      - Third run → `output_hs_3.txt`  
      - … and so on.  
+4. **Build Debug and Release
+   Command: 'make all'
+   - combines debug and release actions
 
 4. **Clean Output Files**
    Command: `make clean`  
