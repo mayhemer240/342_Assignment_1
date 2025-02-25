@@ -12,7 +12,7 @@ Merge and Sort algorithm implemented in C language
 ### Services
 - **Communication** - discord.com
 - **Source control** - Github.com
-## REferences
+### REferences
 - **Merge Sort algorithm reference** - https://en.wikipedia.org/wiki/Merge_sort
 - **Quick Sort algorithm reference** -  https://en.wikipedia.org/wiki/Quick_sort
 
