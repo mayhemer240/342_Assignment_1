@@ -6,19 +6,32 @@ TARGET = HaskellTest
 init:
 	@mkdir -p $(OUTPUT_DIR)
 
-# Find the next available output file and run the program
-run: init
+# Debug rule - Compile and show last 10 lines of output
+debug: init
+	@echo ""; \
+	echo "====================================="; \
+	echo " Running $(TARGET)..."; \
+	echo "====================================="; \
+	cabal run $(TARGET); \
+	echo "====================================="; \
+
+
+# Release build with automatic numbering
+release: init
 	@i=1; \
 	while [ -f "$(OUTPUT_DIR)/output_hs_$$i.txt" ]; do \
 		i=$$((i+1)); \
 	done; \
-	echo " Running $(TARGET)..."; \
-	cabal run $(TARGET) > "$(OUTPUT_DIR)/output_hs_$$i.txt"; \
-	echo " Output saved to $(OUTPUT_DIR)/output_hs_$$i.txt\n"; \
-	echo "==================================="; \
-	tail -n 10 "$(OUTPUT_DIR)/output_hs_$$i.txt"; \
-	echo "===================================\n\n\n\n"
+	FILE_NAME="output_hs_$$i.txt"; \
+	OUTPUT_FILE="$(OUTPUT_DIR)/$$FILE_NAME"; \
+	cabal run $(TARGET) > "$$OUTPUT_FILE"; \
+	echo " Output saved.\n File: $$FILE_NAME"; \
+	echo "\n"
+	
+# Combined Debug + Release rule
+all: debug release
 
 # Clean output directory
 clean:
-	rm -rf $(OUTPUT_DIR)/*.txt
+	@rm -rf $(OUTPUT_DIR)/*.txt
+

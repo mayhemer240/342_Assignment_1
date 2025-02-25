@@ -27,8 +27,7 @@ debug: $(BUILD_DIR)/$(TARGET)
 	@echo ""
 	@$(BUILD_DIR)/$(TARGET) | tail -n 10
 	@echo ""
-	@echo "=============================\n\n\n\n"
-	@echo ""
+	@echo "\n\n\n\n"
 
 
 # Release build with automatic numbering
@@ -49,6 +48,7 @@ test: $(BUILD_DIR)/$(TARGET)
 	echo ""; \
 	cat $$OUTPUT_FILE; \
 	echo "\n\n"
+
 
 # Clean rule to remove compiled files
 clean:
