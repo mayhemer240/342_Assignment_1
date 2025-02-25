@@ -5,8 +5,8 @@ Merge and quicksort implementation in Haskell
 ## **Requirements*
 
 **Makefile**
--GHC: the Glasgow Haskell Compiler
--cabal-install: the Cabal installation tool for managing Haskell software
+- GHC: the Glasgow Haskell Compiler
+- cabal-install: the Cabal installation tool for managing Haskell software
 
 ## Using the Makefile
 
