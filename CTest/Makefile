@@ -1,6 +1,5 @@
-# Compiler
-CC = gcc
 
+<<<<<<< HEAD
 # COmpiler flags
 CFLAGS = -Wall 
 
@@ -56,3 +55,5 @@ release: $(BUILD_DIR)/$(TARGET)
 # Clean rule to remove compiled files
 clean:
 	rm -rf $(BUILD_DIR)
+=======
+>>>>>>> 3e90de7d022f5f4e28c8b390ce3011f38aff7e11
