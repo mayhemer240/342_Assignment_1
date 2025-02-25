@@ -1,5 +1,6 @@
 # 342 Assignment 1  
-Sorting Algorithms in C and Haskell  
+Sorting Algorithms in C and Haskell  \
+Group
 
 ## Tools Used  
 - **IDE:** Visual Studio Code  
@@ -17,6 +18,5 @@ Sorting Algorithms in C and Haskell
 To compile all C source files, use the provided Makefile:  
 1. Open a terminal and navigate to the directory containing the source files.  
 2. Run the command:  
-   ```sh
    make
 
