@@ -2,6 +2,25 @@
 
 Merge and Sort algorithm implemented in C language
 
+## Usage
+
+```make
+#  default compiles all source files into exe program 
+make
+
+# build debug, onlyu view last 10 lines in program output
+make debug
+
+# build release, store program output in a numbered text file
+make release
+
+# combines debig and release
+make all
+
+#  destroy output text files
+make clean 
+```
+
 ### Tools 
 - **Compiler(s)**:
     - GCC (Apple Clang 15.0.0)
