@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 # COmpiler flags
 CFLAGS = -Wall 
 
@@ -32,28 +31,25 @@ debug: $(BUILD_DIR)/$(TARGET)
 	@echo ""
 
 
-# Release build with user input (only program output is written to the file)
-release: $(BUILD_DIR)/$(TARGET)
+# Release build with automatic numbering
+test: $(BUILD_DIR)/$(TARGET)
 	@mkdir -p $(BUILD_DIR)/$(OUTPUT_DIR)
-	@read -p "Enter output file number: " FILE_NUM; \
-	FILE_NAME="output_c_$$FILE_NUM.txt"; \
+	@i=1; \
+	while [ -f "$(BUILD_DIR)/$(OUTPUT_DIR)/output_c_$$i.txt" ]; do \
+		i=$$((i+1)); \
+	done; \
+	FILE_NAME="output_c_$$i.txt"; \
 	OUTPUT_FILE="$(BUILD_DIR)/$(OUTPUT_DIR)/$$FILE_NAME"; \
 	echo ""; \
-	echo "============================="; \
-	echo " SHOWING RESULTS FROM FILE: $$FILE_NAME "; \
-	echo "============================="; \
+	echo "====================================="; \
+	echo " Running $(BUILD_DIR)/$(TARGET)..."; \
 	./$(BUILD_DIR)/$(TARGET) > $$OUTPUT_FILE; \
-	cat $$OUTPUT_FILE; \
+	echo " Output saved to $$OUTPUT_FILE"; \
+	echo "====================================="; \
 	echo ""; \
-	echo "=============================\n\n\n\n"; \
-	echo ""
-
-
-	
-
+	cat $$OUTPUT_FILE; \
+	echo "\n\n"
 
 # Clean rule to remove compiled files
 clean:
 	rm -rf $(BUILD_DIR)
-=======
->>>>>>> 3e90de7d022f5f4e28c8b390ce3011f38aff7e11
