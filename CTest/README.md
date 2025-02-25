@@ -1,6 +1,7 @@
 # C Test Program
 ### Build Requirements
 - GCC Compiler
+- Make
 
 ### Project Structure
 📂 CTest/ (Main directory for the C project)  
