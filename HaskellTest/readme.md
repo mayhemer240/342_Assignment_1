@@ -10,12 +10,12 @@ Merge and quicksort implementation in Haskell
 
 ## Project navigation
 📂 HaskellTest/ (Main directory for the Haskell project)  
-├── 📂 app/ (Contains all source files)  
-├── 📂 output/ (Created after `make` is run, stores output txt files)  
-├── 📂 dist-newstyle/ (Automatically generated from cabal, stores build artifacts)  
-├── 📄 CHANGELOG.md (Keeps track of the project’s history with version updates, bug fixes, and new features)  
-├── 📄 haskelltest.cabal (Cabal project file that defines project settings, dependencies, and build instructions)  
-└── 📄 Makefile (Defines build automation commands, such as `make release` or `make clean`)
+├── 📂 app/                (Contains all source files)  
+├── 📂 output/             (Created after `make` is run, stores output txt files)  
+├── 📂 dist-newstyle/      (Automatically generated from cabal, stores build artifacts)  
+├── 📄 CHANGELOG.md        (Keeps track of the project’s history with version updates, bug fixes, and new features)  
+├── 📄 haskelltest.cabal    (Cabal project file that defines project settings, dependencies, and build instructions)  
+└── 📄 Makefile             (Defines build automation commands, such as `make release` or `make clean`)
 
 
 
