@@ -8,23 +8,34 @@ CFLAGS = -Wall
 # Source files
 SRCS = src/main.c src/merge_sort.c src/quick_sort.c
 
-# Output files directory
-OUTPUT_DIR = build/output
-# Output executable name
+# DIRECTORY NAMES
+BUILD_DIR = build
+OUTPUT_DIR = output
+#Executable name
 TARGET = build/program
+
+#Default rule
+all: build_dir $(TARGET)
+
+#make directories
+build_dir:
+	mkdir -p build/output
 
 
 # Rule to compile the program
 $(TARGET): $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS) 
+
 
 # Run without redirecting output
 debug: $(TARGET)
+	@mkdir -p build
 	@echo "\nC Test Program Output (Last 10 lines): \n"
 	@./$(TARGET) | tail -n 10
 
 # Release build
 release: $(TARGET)
+	@mkdir build/output
 	@./$(TARGET) > build/output/output_c_1.txt
 	@cat build/output/output_c_1.txt
 	
@@ -39,4 +50,4 @@ update_requirements: $(TARGET)
 
 # Clean rule to remove compiled files
 clean:
-	@rm -f $(TARGET) $(OUTPUT_DIR)*.txt
+	@rm -rf $(BUILD_DIR) $(OUTPUT_DIR)/*.txt
