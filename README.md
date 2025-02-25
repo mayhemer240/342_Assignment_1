@@ -2,12 +2,13 @@
 Sorting algorithms in C and Haskell
 
 
-##  TOOLS USED:
-  Visual Studio Code
-  gcc - Apple clang version 15.0.0
-  Makefile
-  discord.com
-  wikipedia: https://en.wikipedia.org/wiki/Merge_sort
+##  TOOLS USED
+  IDE: Visual Studio Code\
+  COMPILER: gcc - Apple clang version 15.0.0\
+  COMMUNICATION: discord.com\
+  ALGORITHM SOURCES: https://en.wikipedia.org/wiki/Merge_sort \
+  https://en.wikipedia.org/wiki/Quicksort
+  OTHER: Makefile
 
 
 ## NOTE: 
