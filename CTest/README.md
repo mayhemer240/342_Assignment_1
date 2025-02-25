@@ -1,9 +1,12 @@
 # C Test Program
-### Build Requirements
+
+## Build Requirements
+
 - GCC Compiler
 - Make
 
 ### Project Structure
+
 📂 CTest/ (Main directory for the C project)  
 ├── 📂 src/ (Contains all C source files)  
 ├── 📂 build/ (Created after `make` is run, stores compiled files)  
@@ -11,6 +14,7 @@
 │   └── program (Compiled executable)
 
 ### Build Instructions
+
 1. Navigate to the project directory
    cd CTest
 
@@ -29,9 +33,7 @@
    make clean
 
 ### Additional Notes
+
 - The `make release` command will store output in the `build/output/` directory.
 - The executable file is stored in `build/`.
 - Ensure you have `make` installed to use these commands
-
-
-
