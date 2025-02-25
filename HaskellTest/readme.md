@@ -1,6 +1,12 @@
 # Haskell Test Program
 Merge and quicksort implementation in Haskell
 
+## **Build and Execution Guide**
+This project uses a `Makefile` to automate compilation, execution, and output management.
+
+### **Available Commands**
+#### **1. Build the Program**
+
 ## **Build Documentation**
 Use of makefile 
 1. make
