@@ -2,7 +2,7 @@
 
 Merge and Sort algorithm implemented in C language
 
-## Tools 
+### Tools 
 - **Compiler(s)**:
     - GCC (Apple Clang 15.0.0)
 - **IDE(S)**:
