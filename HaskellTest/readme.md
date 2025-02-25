@@ -2,7 +2,7 @@
 
 Merge and quicksort implementation in Haskell
 
-## **Requirements*
+## Requirements*
 
 - Makefile
 - GHC: the Glasgow Haskell Compiler
