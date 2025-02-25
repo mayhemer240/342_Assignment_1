@@ -8,10 +8,13 @@ Sorting algorithms in C and Haskell
 ###  COMPILERS 
   gcc -> Apple clang version 15.0.0
   hk -> 
-  COMMUNICATION: discord.com\
-  ALGORITHM SOURCES: https://en.wikipedia.org/wiki/Merge_sort \
-  https://en.wikipedia.org/wiki/Quicksort
-  OTHER: Makefile
+###  COMMUNICATION METHOD 
+  discord.com
+### ALGORITHM REFERENCES
+  https://en.wikipedia.org/wiki/Merge_sort \
+  https://en.wikipedia.org/wiki/Quicksort \
+### OTHER
+  Makefile
 
 
 ## NOTES
