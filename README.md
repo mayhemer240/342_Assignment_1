@@ -3,9 +3,11 @@ Sorting algorithms in C and Haskell
 
 
 ##  TOOLS USED
-###  IDE: Visual Studio Code\
-  COMPILERS: gcc - Apple clang version 15.0.0\
-              hk
+###  IDE
+  Visual Studio Code
+###  COMPILERS 
+  gcc -> Apple clang version 15.0.0
+  hk -> 
   COMMUNICATION: discord.com\
   ALGORITHM SOURCES: https://en.wikipedia.org/wiki/Merge_sort \
   https://en.wikipedia.org/wiki/Quicksort
