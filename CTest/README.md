@@ -2,6 +2,20 @@
 
 Merge and Sort algorithm implemented in C language
 
+## Tools 
+ TOOLS
+     Compiler(s):
+         - GCC (Apple Clang 15.0.0)
+     IDE(S):
+         - Visual Studio Code
+     Other:
+         - Makefile for compilation
+ SERVICES
+     Merge Sort algorithm reference - https://en.wikipedia.org/wiki/Merge_sort
+     Quick Sort algorithm reference -  https://en.wikipedia.org/wiki/Quick_sort
+     Communication - discord.com
+     Source control - Github.com
+
 ### Project Structure
 
 📂 CTest/ (Main directory for the C project)  
@@ -10,10 +24,6 @@ Merge and Sort algorithm implemented in C language
 │   ├── 📂 output/ (Created after `make release`, stores output files)  
 │   └── program (Compiled executable)
 
-### Requirements
-
-- GCC Compiler
-- Make
 
 ## Build Instructions
 
