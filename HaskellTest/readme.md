@@ -4,9 +4,9 @@ Merge and quicksort implementation in Haskell
 ## **Build Documentation**
 Use of makefile 
 1. make
-   -default
-   -compiles source code
-   -creates output subdirectory inside project directory
+   --default
+   --compiles source code
+   --creates output subdirectory inside project directory
 2. make debug
    -prints program output into console
 3. make release
