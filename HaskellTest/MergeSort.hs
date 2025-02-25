@@ -1,0 +1,6 @@
+-- Main.hs
+--
+-- CECS 342 Assignment 1
+-- Sorting Algorithms in C & Haskell
+--
+-- Haskell Test Program
