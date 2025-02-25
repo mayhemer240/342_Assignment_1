@@ -12,5 +12,5 @@ Sorting algorithms in C and Haskell
 
 
 ## NOTE: 
-  Use makefile to compile all source files. 
+  Use makefile to compile all C source files. 
   In terminal, make sure you are in directory containing source files, then type 'make'
