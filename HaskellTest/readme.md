@@ -4,9 +4,9 @@ Merge and quicksort implementation in Haskell
 
 ## **Requirements*
 
-Makefile
-GHC: the Glasgow Haskell Compiler
-cabal-install: the Cabal installation tool for managing Haskell software
+**Makefile
+**GHC: the Glasgow Haskell Compiler
+**cabal-install: the Cabal installation tool for managing Haskell software
 
 ## Using the Makefile
 
@@ -34,4 +34,3 @@ This project uses a `Makefile` to automate compilation, execution, and output ma
 4. **Clean Output Files**
    Command: `make clean`  
    - Deletes all `.txt` files from the `output/` directory. 
-
