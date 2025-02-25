@@ -1,0 +1,40 @@
+--merge sort in haskell
+
+
+--PROTOTYPES
+merge :: Ord a => [a] -> [a] -> [a] 
+merge_sort :: Ord a => [a] -> [a]
+
+
+-- MERGE IMPLEMENTATION takes two sorted lists and returns a single merged sorted list. Base cases: when one list is empty, returns non empty list given in paramters. recursive case: recursively conpare first elements of two lists- if left element is smaller or equal, prepend that element to second list. ofherwise prepend second element to fitst list. continue until one list is empty 
+
+-- base cases
+merge [] right = right
+merge left [] = left 
+-- recursive case
+merge (x:xs) (y:ys) = 
+   if x <= y 
+   then x : merge xs (y:ys)
+   else y : merge (x:xs) ys
+
+
+-- MERGESORT IMPLEMENTATION takes an unsorted list and recursivly partition subarrays until empty or single element list (base cases) returns sorted list. Partitions by calculating middle and assigning left and right subarrays. note: take and drop non destructive, will not change original list 
+
+-- base cases:
+merge_sort [] = []
+merge_sort [x] = [x]
+-- recursive case: 
+merge_sort xs = 
+merge (merge_sort left) (merge_sort right)
+   where 
+     middle = length xs `div` 2
+     left = take middle xs
+     right = drop middle xs
+
+
+--MAIN IO TESTING 
+main :: IO()
+main = do
+  let testLists = [[3, 1, 4, 1, 5, 9, 2], [], [42], [10, -1, 2, 8, 3]]
+      results = map merge_sort testLists
+  mapM_ print (zip testLists results)
