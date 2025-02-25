@@ -31,7 +31,7 @@ This project uses a `Makefile` to automate compilation, execution, and output ma
      - Third run → `output_hs_3.txt`  
      - … and so on.  
 4. **Build Debug and Release
-   Command: 'make all'
+   Command: `make all`
    - combines debug and release actions
 
 4. **Clean Output Files**
