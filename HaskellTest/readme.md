@@ -4,19 +4,27 @@ Merge and quicksort implementation in Haskell
 ## **Build and Execution Guide**
 This project uses a `Makefile` to automate compilation, execution, and output management.
 
-### **Available Commands**
-#### **1. Build the Program**
+## Using the Makefile
+1. **Build the Program**
+   Command: `make`  
+   - Default command – compiles the source code.  
+   - Creates an `output/` subdirectory inside the project directory (if it doesn’t exist).  
 
-## **Build Documentation**
-Use of makefile 
-1. make
-   --default
-   --compiles source code
-   --creates output subdirectory inside project directory
-2. make debug
-   -prints program output into console
-3. make release
-   -puts program input into text file automatically incremented
-   -ie first make release creates output_hs_1.txt, second creates output_hs_2.txt... etc
-4. make clean
-   -removes all txt files from output folder. 
+2. **Debug Mode (Console Output)**
+   Command: `make debug`  
+   - Runs the program.  
+   - Displays output directly in the console (does not save to a file).  
+
+3. **Release Mode (Save Output to File)**
+   Command: `make release`  
+   - Runs the program and saves output to a text file.  
+   - Files are automatically numbered:  
+     - First run → `output_hs_1.txt`  
+     - Second run → `output_hs_2.txt`  
+     - Third run → `output_hs_3.txt`  
+     - … and so on.  
+
+4. **Clean Output Files**
+   Command: `make clean`  
+   - Deletes all `.txt` files from the `output/` directory.  
+
